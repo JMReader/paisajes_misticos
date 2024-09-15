@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:ital,wght@0,700;1,700&display=swap');
+
+
+
+:root {
+  --color-main: #048aa4;
+  --color-secundario: #9fb9c5b7;
+  --color-extra: #f8944c;
+  /* --color-titulo: #ffe598eb;
+  --color-subtitulo: rgb(150 153 231);
+  --color-layouts: #1c2952;
+  --color-contactenos: rgba(54, 135, 175, 0.8); */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: url('assets/bg.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
