@@ -1,0 +1,195 @@
+h2, form {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+#contact__info {
+    /* border-left: 6px solid var(--color-main); */
+    height: 50%;
+    padding-left: 6px;
+}
+
+.contact__title {
+    border-left: 6px solid var(--color-main);
+}
+
+.contact__list {
+    list-style: none;
+    padding: 0;
+}
+
+#container__form {
+    width: fit-content;
+    min-width: 50%;
+
+}
+
+#contact__Form {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_send {
+    background-color: var(--color-main);
+    color: #ffffff;
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+}
+
+
+/*buttons part*/
+.container__buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bookmarkBtn {
+    min-width: 160px;
+    margin: 6px;
+    height: 40px;
+    max-width: 100%;
+    border-radius: 40px;
+    border: 1px solid #0a618431;
+    background-color: #5192ac;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: .3s;
+    overflow: hidden;
+  }
+  
+  .IconContainer {
+    color: white;
+    width: 30px;
+    height: 30px;
+    background: #0d5262;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: .3s;
+  }
+
+.icon {
+    border-radius: 1px;
+}
+
+.btn__txt {
+    height: 100%;
+    flex-grow: 1;
+    /* Ocupa el espacio disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    transition-duration: .3s;
+    font-size: 1.04em;
+    margin: 0;
+    white-space: nowrap;
+    /* Evita que el texto se desborde */
+    overflow: hidden;
+    /* Oculta el texto que no quepa */
+}
+
+.bookmarkBtn:hover .IconContainer {
+
+    width: 150px;
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+
+.bookmarkBtn:hover .btn__txt {
+    flex-grow: 0;
+    /* Deshabilita el crecimiento del texto */
+    width: 0;
+    font-size: 0;
+    padding: 0;
+    transition-duration: .3s;
+}
+
+.bookmarkBtn:active {
+    transform: scale(0.95);
+    transition-duration: .3s;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 300px; */
+    background-color: var(--color-extra);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+}
+
+.form .title {
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input {
+    outline: 0;
+    border: 1px solid rgb(219, 213, 213);
+    padding: 8px 14px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+}
+
+.form textarea {
+    border-radius: 8px;
+    height: 100px;
+    width: 100%;
+    resize: none;
+    outline: 0;
+    padding: 8px 14px;
+    border: 1px solid rgb(219, 213, 213);
+}
+
+.form button {
+    align-self: flex-end;
+    padding: 8px;
+    outline: 0;
+    border: 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 1020px) {
+    #container__form {
+        width: 50%;
+    }
+
+    #contact__info {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1020px) {
+    .container__buttons {
+        justify-content: center;
+    }
+}
