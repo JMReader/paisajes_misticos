@@ -21,9 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LandingComponent,
     FirstpageComponent,
     SecondpageComponent,
-    ContactComponent,
-
-    
+    ContactComponent
   ],
   imports: [
     BrowserModule,
