@@ -51,7 +51,7 @@ export class SecondpageComponent {
 
   state: string = 'not-show';
 
-  WHATSAPP_LINK: string= 'https://wa.me/5493884757489?text=¡Hola! Estoy interesado/a en obtener más información sobre sus servicios. ¿Podrian brindarme mas informacion?';
+  WHATSAPP_LINK: string= 'https://wa.me/5493885872269?text=¡Hola! Estoy interesado/a en obtener más información sobre los circuitos que ofrecen para conocer Jujuy.';
   IG_LINK: string = 'https://www.instagram.com/senderosenjujuy?utm_source=qr&igsh=ZXQydW9wMmE5dDZ2c';
   FACEBOOK_LINK: string = 'https://www.facebook.com/share/mG8swMrT3jdaktyz/?mibextid=qi2Omg';
   EMAIL_LINK: string = 'mailto:tusviajes22@gmail.com';
