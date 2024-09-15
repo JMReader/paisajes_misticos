@@ -1,0 +1,44 @@
+.navbar {
+  background-color: rgba(0, 0, 0, 0.603);
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar.scrolled {
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar.scrolled .nav-link {
+  color: black;
+}
+
+a {
+  color: aliceblue;
+}
+
+a:hover {
+  color: rgb(214, 219, 224);
+}
+
+.dropdown-menu i {
+  margin: 4px;
+}
+
+.dropdown-menu {
+  background-color: var(--bs-secondary);
+}
+
+#li-Ig:hover {
+  background-color: #C13584;
+}
+
+#li-Fa:hover {
+  background-color: #3B5998;
+}
+
+#li-Wpp:hover {
+  background-color: #128c7e;
+
+}

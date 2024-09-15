@@ -1,0 +1,59 @@
+<div style="flex-wrap: wrap; flex-direction: row; display: flex; padding: 8px;    justify-content: center;">
+    <div id="contact__info" class="my-2">
+      <div class="contact__title fs-1 mb-2">
+        <h2 style="margin-left: 1.5vh;">Contacto</h2>
+      </div>
+      <ul class="contact__list text-wrap" >
+        <li class="text-wrap">
+          <p>
+            <a target="_blank" href="mailto: tusviajes22@gmail.com"><i class="fa-solid fa-envelope" style="color: var(--color-main);"></i></a>
+            <b>  {{mail}}</b>
+          </p>
+        </li>
+        <li class="text-wrap">
+          <p>
+            <a href="tel:+543884757489"><i class="fa-solid fa-phone" style="color: var(--color-main);"></i></a>
+            <b>  +54 9 3885872269</b>
+          </p>
+        </li>
+        <li class="text-wrap">
+          <p>
+            <a href="https://maps.app.goo.gl/dq4tzdbEg4LT9Yj77"><i class="fa-solid fa-location-dot" style="color: var(--color-main);"></i></a>
+            <b>   San Salvador de Jujuy, Jujuy-Argentina</b>
+          </p>
+        </li>
+      </ul>
+      <div class="container__buttons">
+        <button class="bookmarkBtn" (click)="openWindow('wpp')">
+          <span class="IconContainer" id="icon_wpp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </span>
+          <p class="btn__txt">Whatsapp</p>
+        </button>
+        <button class="bookmarkBtn" (click)="openWindow('ig')">
+          <span class="IconContainer" id="icon_ig">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+          <p class="btn__txt">Instagram</p>
+        </button>
+        <button class="bookmarkBtn" (click)="openWindow('email')">
+          <span class="IconContainer" id="icon_email">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <p class="btn__txt">Email</p>
+        </button>
+      </div>
+    </div>
+      <div id="container__form" class="my-2">
+        
+        <form class="form" (ngSubmit)="enviarMensaje()">
+          <div class="title">¿Cómo podemos ayudarte?</div>
+          <input type="text" [(ngModel)]="nombre" placeholder="Nombre" name="nombre" required />
+          <input type="email" [(ngModel)]="correo" placeholder="Correo electronico" name="correo" required />
+          <input type="tel" [(ngModel)]="telefono" placeholder="Telefono" name="telefono" required />
+          <textarea [(ngModel)]="mensaje" placeholder="Mensaje" name="mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    
+  </div>

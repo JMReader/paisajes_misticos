@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -22,17 +22,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FirstpageComponent,
     SecondpageComponent,
     ContactComponent,
-
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     CarrouselComponent,
-    BrowserAnimationsModule 
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
