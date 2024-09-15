@@ -12,8 +12,7 @@ import { FirstpageComponent } from './components/landings/firstpage/firstpage.co
 import { SecondpageComponent } from './components/landings/secondpage/secondpage.component';
 import { ContactComponent } from './components/landings/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ProductsComponent } from './components/products/products.component';
-import { CardComponent } from './components/utils/card/card.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +22,6 @@ import { CardComponent } from './components/utils/card/card.component';
     FirstpageComponent,
     SecondpageComponent,
     ContactComponent,
-    ProductsComponent,
-    CardComponent,
 
     
   ],

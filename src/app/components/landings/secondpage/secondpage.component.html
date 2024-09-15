@@ -1,0 +1,77 @@
+
+<div class="who__card">
+  <app-carrousel id="carrousel" [@fade]='state' id="carrousel"></app-carrousel>
+  <div [@fadeLeft]='state' id="who__card-second">
+    <h2>¿Quiénes somos?</h2>
+    <p>
+      Paisajes Misticos es una comunidad apasionada por el senderismo y los viajes, profundamente
+      conectada con la esencia de Tilcara, nuestro hogar. Nos dedicamos a explorar y compartir la belleza natural de Jujuy,
+       en un vínculo especial con nuestra madre tierra, la Pachamama. Cada experiencia es única, adaptada a las necesidades de cada viajero, 
+       para garantizar aventuras personalizadas y auténticas, llenas de cultura y tradiciones.
+    </p>
+    
+    <b style="color: #e56b24">¡Animate a formar parte y conocer tu escencia!</b>
+    <br>
+  </div>
+
+
+  <div class="container-fluid text-center" style="margin: 5px;">
+    <hr>
+    <p><strong>Inspiramos a otros a descubrir rutas inolvidables, respetando el entorno
+       y fomentando un turismo sostenible y consciente, siempre en armonía con nuestras raíces y el legado de nuestros antepasados..</strong></p>
+    
+
+    <div class="container-fluid text-center">
+      <div class="row cards">
+        <div class="col card red">
+          <p>Una comunidad amigable con el movimiento LGBT</p>
+        </div>
+        <div class="col card blue">
+          <p>Encargados de resaltar la belleza de los pasajes de jujuy</p>
+        </div>
+        <div class="col card green">
+          <p>Respetamos el medio ambiente y las culturas locales.</p>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <div class="container-fluid cartel">
+    <!-- <h4 class="cartel__titulo">Profesionalidad</h4> -->
+    <div class="cartel__description">
+      <h4 class="text-center">
+        Para obtener más información comunicate con nosotros
+      </h4>
+      <div class="container__buttons">
+        <button class="bookmarkBtn" (click)="openWindow('wpp')">
+          <span class="IconContainer" id="icon_wpp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </span>
+          <p class="btn__txt">Whatsapp</p>
+        </button>
+        <button class="bookmarkBtn" (click)="openWindow('ig')">
+          <span class="IconContainer" id="icon_ig">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+          <p class="btn__txt">Instagram</p>
+        </button>
+
+        <button class="bookmarkBtn" (click)="openWindow('face')">
+          <span class="IconContainer" id="icon_ig">
+            <i class="fa-brands fa-facebook"></i>
+          </span>
+          <p class="btn__txt">Facebook</p>
+        </button>
+        <button class="bookmarkBtn" (click)="openWindow('email')">
+          <span class="IconContainer" id="icon_email">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <p class="btn__txt">Email</p>
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
