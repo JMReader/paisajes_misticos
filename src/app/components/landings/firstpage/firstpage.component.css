@@ -43,6 +43,33 @@ h2 {
     animation: bound 1.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
+.elegi_arg{
+    height: 76px;
+    color: white; /* Añadido para garantizar el color blanco en todos los estados */
+}
+.container_elegi_arg{
+    background-color: rgba(215, 242, 250, 0.795);
+    padding: 12px;
+    border-radius: 9px;
+    display: flex;
+    font-size: medium;
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.elegi_arg_font{
+    margin-left: 9px;
+    margin-right: 9px;
+    font-weight: bold;
+    color: rgb(228, 166, 34);
+}
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .banner-container {
@@ -57,6 +84,18 @@ h2 {
     .arrow {
         bottom: 1rem; /* Ajustar posición del arrow en pantallas pequeñas */
     }
+    .container_elegi_arg{
+        flex-direction: column;
+        width: 80vw;
+    }
+    .elegi_arg{
+        height: 48px;
+        color: white; /* Añadido para garantizar el color blanco en todos los estados */
+    }
+    .elegi_arg_font{
+        margin: 0px;
+    }
+    
 }
 
 /* Animations */
